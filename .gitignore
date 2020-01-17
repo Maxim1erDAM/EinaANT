@@ -1,3 +1,6 @@
 calcula
 *.o
 .class
+.save
+.swp
+.tmp
