@@ -62,4 +62,13 @@ public class Calculadora {
 	this.lastOp="Majorque";
 	return result;
     }
+	
+    public float mitja(float operand1, float operand2){
+	float mitja = ((operand1+operand2)/2);
+
+	float result=mitja;
+	this.lastResult=result;
+	this.lastOp="Mitja";
+	return result;
+    }	
 }
