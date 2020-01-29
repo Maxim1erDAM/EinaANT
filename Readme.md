@@ -253,7 +253,7 @@ Com veiem, l'XML té tres etiquetes target:
 
 # 2.2. Instal·lació d'ant
 
-Per tal de comprovar el funcionament, cal primerament instal·lar el paquet ant. "apt-cache policy ant", si no el tenim instalat, mos mostrara:
+Per tal de comprovar el funcionament, cal primerament instal·lar el paquet ant. La comanda, "apt-cache policy ant", si no tenim el paquet instalat, mos mostrara:
 
 ```
 $ apt-cache policy ant
@@ -269,8 +269,25 @@ ant:
      1.10.3-1 500
         500 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
         500 http://archive.ubuntu.com/ubuntu bionic/universe i386 Packages
+```
 
 Com veiem, ens mostra que ant no es troba instal·lat al sistema, però tenim una versió candidata als repositoris d'Ubuntu (la 1.10.5-3~18.04). En cas d'estar instal·lada, en lloc de (cap), se'ns mostraria la versió d'aquesta.
+
+```
+alumne@alumne-VirtualBox:~/Escritorio/einaant/projecte$ apt-cache policy ant
+ant:
+  Instalados: 1.10.5-3~18.04
+  Candidato:  1.10.5-3~18.04
+  Tabla de versión:
+ *** 1.10.5-3~18.04 500
+        500 http://es.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages
+        500 http://es.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages
+        500 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages
+        500 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages
+        100 /var/lib/dpkg/status
+     1.10.3-1 500
+        500 http://es.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
+        500 http://es.archive.ubuntu.com/ubuntu bionic/universe i386 Packages
 ```
 
 Per tal d'instal·lar ant, farem:
