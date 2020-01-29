@@ -30,8 +30,12 @@ Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació 
 4 directories, 3 files
 ```
 
-Com veiem, el codi font està organitzat en una estructura de carpetes. Açò ens serveix per organitzar millor el codi de les nostres aplicacions. Generalment, les carpetes de més alt nivell especifiquen l'organització, i internament van estructurant-se segons la funcionalitat. Com podeu veure, es tracta com si fos un domini d'Intenet, però de l'inrevés (com/ieseljust/edd -> edd.ieseljust.com).
+Com veiem, el codi font està organitzat en una estructura de carpetes.
+
+Açò ens serveix per organitzar millor el codi de les nostres aplicacions.Generalment, les carpetes de més alt nivell especifiquen l'organització, i internament van estructurant-se segons la funcionalitat. Com podeu veure, es tracta com si fos un domini d'Intenet, però de l'inrevés (com/ieseljust/edd -> edd.ieseljust.com).
+
 Aquesta estructura, ens determinarà el nom del paquet al que pertànyen els programes. Anem a veure el codi de cadascun.
+
 Classe com.ieseljust.edd.calc.Calculadora
 
 >***`Aquesta classe s'implementa al fitxer com/ieseljust/edd/calc/Calculadora.java:`*** 
