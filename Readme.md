@@ -9,7 +9,7 @@
 # UNITAT 4. Automatització amb Ant.
 # 1. Introducció
 
-## 1. Com instalar Ant en Ubuntu 18.
+## 1. Eines d'autmatitzacio en Java.
 
 En Java disposem de diverses eines que ens ajuden a automatitzar les tasques de construcció d'aplicacions i gestionar les seues dependències.
 En aquesta part de la unitat veurem tres de les principals eines: Apache Ant, Apache Maven i Gradle. Veurem les principals característiques d'elles, i aprendrem com crear i gestionar el cicle de construcció de l'aplicació amb cadascuna.
