@@ -16,21 +16,17 @@
 # 1. Introducció
 
 ## 1. Com instalar Ant en Ubuntu 18.
->***`
-En Java disposem de diverses eines que ens ajuden a automatitzar les tasques de construcció d'aplicacions i gestionar les seues dependències.
+>***`En Java disposem de diverses eines que ens ajuden a automatitzar les tasques de construcció d'aplicacions i gestionar les seues dependències.
 En aquesta part de la unitat veurem tres de les principals eines: Apache Ant, Apache Maven i Gradle. Veurem les principals característiques d'elles, i aprendrem com crear i gestionar el cicle de construcció de l'aplicació amb cadascuna.
 Posteriorment, veurem com incloure llibreríes en els nostres projectes i gestionar-ne les dependències, de manera que l'usuari o altres desenvolupadors no s'hagen de preocupar de descarregar-les i instal·lar-les pel seu compte.
 Aplicació d'exemple
 Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació de la calculadora que vam veure amb el make. Per a això, disposem de dos fitxers .java, organitzats de ls següent forma:
-->Imatge de l'arbre de imatges i directoris.
-
-`***  
+->Imatge de l'arbre de imatges i directoris.`***  
 
 
-Com veiem, el codi font està organitzat en una estructura de carpetes. Açò ens serveix per organitzar millor el codi de les nostres aplicacions. Generalment, les carpetes de més alt nivell especifiquen l'organització, i internament van estructurant-se segons la funcionalitat. Com podeu veure, es tracta com si fos un domini d'Intenet, però de l'inrevés (com/ieseljust/edd -> edd.ieseljust.com).
-
+>***`Com veiem, el codi font està organitzat en una estructura de carpetes. Açò ens serveix per organitzar millor el codi de les nostres aplicacions. Generalment, les carpetes de més alt nivell especifiquen l'organització, i internament van estructurant-se segons la funcionalitat. Com podeu veure, es tracta com si fos un domini d'Intenet, però de l'inrevés (com/ieseljust/edd -> edd.ieseljust.com).
 Aquesta estructura, ens determinarà el nom del paquet al que pertànyen els programes. Anem a veure el codi de cadascun.
-Classe com.ieseljust.edd.calc.Calculadora
+Classe com.ieseljust.edd.calc.Calculadora`*** 
 
 Aquesta classe s'implementa al fitxer com/ieseljust/edd/calc/Calculadora.java:
 
