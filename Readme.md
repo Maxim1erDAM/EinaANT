@@ -29,9 +29,11 @@ Aquesta estructura, ens determinarà el nom del paquet al que pertànyen els pro
 Classe com.ieseljust.edd.calc.Calculadora`*** 
 
 >***`Aquesta classe s'implementa al fitxer com/ieseljust/edd/calc/Calculadora.java:`*** 
-package com.ieseljust.edd.calc;
+
 
 ```
+package com.ieseljust.edd.calc;
+
 public class Calculadora {
 
     private float lastResult;
