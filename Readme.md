@@ -362,8 +362,8 @@ Una vegada feta la compilació, podem observar l'estructura generada:
 ```
 
 Com veiem, ens ha generat una carpeta classes tal i com hem indicat al target, i dins d'aquesta, ens ha replicat tota l'estructura de carpetes corresponent al paquet, amb els fitxers .class compilats a dins.
-
-    Per a l'execució:
+Per a l'execució:
+    
 ```
 alumne@alumne-VirtualBox:~/Escritorio/proves/einaant/projecte$ ant run -Darg0=3 -Darg1=4
 Buildfile: /home/alumne/Escritorio/proves/einaant/projecte/build.xml
