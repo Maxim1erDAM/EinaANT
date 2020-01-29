@@ -8,7 +8,7 @@
 >
 >***[2. Apache Ant (Another Neat Tool) - Activitat Practica](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#2-apache-ant-another-neat-tool---activitat-practica)***
 >
->***[3. Ús d'Ant](https://github.com/Maxim1erDAM/Unitat4/blob/master/Readme.md#3-make-i-el-fitxer-makefile)***
+>***[3. Ús d'Ant](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#3-%C3%BAs-dant)***
 
 #    **-Activitat pràctica-**
 
