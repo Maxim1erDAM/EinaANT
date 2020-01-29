@@ -312,7 +312,7 @@ Una vegada feta la compilació, podem observar l'estructura generada:
 Com veiem, ens ha generat una carpeta classes tal i com hem indicat al target, i dins d'aquesta, ens ha replicat tota l'estructura de carpetes corresponent al paquet, amb els fitxers .class compilats a dins.
 
     Per a l'execució:
-
+```
 $ ant run -Darg0=3 -Darg1=4
 Buildfile: /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/calcula/build.xml
 
@@ -332,9 +332,8 @@ run:
 
 BUILD SUCCESSFUL
 Total time: 1 second
+```
 
-Fixeu-vos que l'ordre ant run afig els dos arguments que necessita la nostra aplicació amb -Darg0=3 -Darg1=4. És a dir, posem -D seguit del nom de l'argument tal i com s'anomena al fitxer build.xml.
-
+>***`Fixeu-vos que l'ordre ant run afig els dos arguments que necessita la nostra aplicació amb -Darg0=3 -Darg1=4. És a dir, posem -D seguit del nom de l'argument tal i com s'anomena al fitxer build.xml.
 Com veiem, en aquest cas, com que no havíem llençat prèviament el ant clean, la tasca clean, sí que ha esborrat el directori classes. Posteriorment, ha fet la compilació, i finalment, l'execuió.
-
-Finalment, si volguérem netejar el projecte, fariem ús de ant clean.
+Finalment, si volguérem netejar el projecte, fariem ús de ant clean.`*** 
