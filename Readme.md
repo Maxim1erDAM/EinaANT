@@ -231,6 +231,17 @@ Una vegada generats els fitxers de bytecode, executem la calculadora amb:
 $ java com.ieseljust.edd.calc.Calcula num1 num2
 ```
 
+El resultat és:
+
+alumne@alumne-VirtualBox:~/Escritorio/proves/einaant/projecte/classes$ java com.ieseljust.edd.calc.Calcula 3 4
+La suma entre 3.0 i 4.0 és 7.0
+La resta entre 3.0 i 4.0 és -1.0
+La multiplicació entre 3.0 i 4.0 és 12.0
+La divisió entre 3.0 i 4.0 és 0.75
+El número major entre els números pasat com a arguments, que són: 3.0 i 4.0. El major es el número:4.0
+La mitja entre els números pasat com a arguments, que són: 3.0 i 4.0. La mitja es el número:3.5
+Última operació realitzada: Mitja; Últim resultat: 3.5
+
 Reemplaçant num1 i num2 pels números que desitgem.
 
 
@@ -405,7 +416,7 @@ BUILD SUCCESSFUL
 Total time: 2 seconds
 
 ```
-Asi un altra captura de la meua maquina virtual:
+Un altra captura de la meua maquina virtual:
 
 ![ImatgeexecucioEinaant](/imatgeseinaant/rundargseinant.png)
 
