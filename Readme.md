@@ -4,7 +4,7 @@
 
 # Index:
 >
->***[1. Eines d'automatització en Java.](https://github.com/Maxim1erDAM/Unitat4#1-com-instalar-git-i-make-en-ubuntu-18)***
+>***[1. Eines d'automatització en Java.](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#1-eines-dautomatitzaci%C3%B3-en-java)***
 >
 >***[2. Apache Ant (Another Neat Tool) - Activitat Practica](https://github.com/Maxim1erDAM/Unitat4#2-com-utilitzar-git-part-1)***
 >
