@@ -17,7 +17,18 @@ Posteriorment, veurem com incloure llibreríes en els nostres projectes i gestio
 Aplicació d'exemple
 Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació de la calculadora que vam veure amb el make. Per a això, disposem de dos fitxers .java, organitzats de la següent forma: 
 
-->Imatge de l'arbre de imatges i directoris.
+```
+.
+├── build.xml
+└── com
+    └── ieseljust
+        └── edd
+            └── calc
+                ├── Calculadora.java
+                └── Calcula.java
+
+4 directories, 3 files
+```
 
 Com veiem, el codi font està organitzat en una estructura de carpetes. Açò ens serveix per organitzar millor el codi de les nostres aplicacions. Generalment, les carpetes de més alt nivell especifiquen l'organització, i internament van estructurant-se segons la funcionalitat. Com podeu veure, es tracta com si fos un domini d'Intenet, però de l'inrevés (com/ieseljust/edd -> edd.ieseljust.com).
 Aquesta estructura, ens determinarà el nom del paquet al que pertànyen els programes. Anem a veure el codi de cadascun.
