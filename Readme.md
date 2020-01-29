@@ -8,18 +8,14 @@
 
 
 >### UNITAT 4. Automatització amb l'eina Ant.
->
->***[1.-Com instalar Git i Make en Ubuntu 18.](https://github.com/Maxim1erDAM/Unitat4#1-com-instalar-git-i-make-en-ubuntu-18)***
->
->***[2. Com utilitzar Git Part 1](https://github.com/Maxim1erDAM/Unitat4#2-com-utilitzar-git-part-1)***
->
->***[3. Make i el fitxer Makefile](https://github.com/Maxim1erDAM/Unitat4/blob/master/Readme.md#3-make-i-el-fitxer-makefile)***
->
->***[4. Com utilitzar Git Part 2](https://github.com/Maxim1erDAM/Unitat4/blob/master/Readme.md#4-com-utilitzar-git-part-2)***
+
+## 1.-Com instalar Ant en Ubuntu 18.
+
 
 #    **-Activitat pràctica-**
 
 # UNITAT 4. Automatització amb Ant.
+
 >***`
 L'eina Ant (format web)
 1. Introducció
@@ -42,27 +38,6 @@ Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació 
                 `-- Calcula.java
 `***  
 
-
-
-L'eina Ant (format web)
-1. Introducció
-
-En Java disposem de diverses eines que ens ajuden a automatitzar les tasques de construcció d'aplicacions i gestionar les seues dependències.
-
-En aquesta part de la unitat veurem tres de les principals eines: Apache Ant, Apache Maven i Gradle. Veurem les principals característiques d'elles, i aprendrem com crear i gestionar el cicle de construcció de l'aplicació amb cadascuna.
-
-Posteriorment, veurem com incloure llibreríes en els nostres projectes i gestionar-ne les dependències, de manera que l'usuari o altres desenvolupadors no s'hagen de preocupar de descarregar-les i instal·lar-les pel seu compte.
-Aplicació d'exemple
-
-Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació de la calculadora que vam veure amb el make. Per a això, disposem de dos fitxers .java, organitzats de ls següent forma:
-
-.
-`-- com
-    `-- ieseljust
-        `-- edd
-            `-- calc
-                |-- Calculadora.java
-                `-- Calcula.java
 
 Com veiem, el codi font està organitzat en una estructura de carpetes. Açò ens serveix per organitzar millor el codi de les nostres aplicacions. Generalment, les carpetes de més alt nivell especifiquen l'organització, i internament van estructurant-se segons la funcionalitat. Com podeu veure, es tracta com si fos un domini d'Intenet, però de l'inrevés (com/ieseljust/edd -> edd.ieseljust.com).
 
