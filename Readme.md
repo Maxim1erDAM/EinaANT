@@ -292,7 +292,7 @@ Com veiem, l'XML té tres etiquetes target:
 >***`run: Per tal d'executar l'aplicació. Com veiem, depèn de la tasca de compilació, i el que fa és llançar java sobre la classe com.ieseljust.edd.calc.Calcula que es troba al classpath classes. A més, dins l'etiqueta que invoca la màquina virtual de Java (<java>), afegim dues etiquetes <arg>, que agafaran els arguments que passem per la línia d'ordres, amb les variables arg0 i arg1.`***
 
 
-Aixi quedarien tots els fichers, ens una captura de la meua maquina virtual.
+Aixi quedarien tots els fichers, en una captura de la meua maquina virtual.
 
 ![ImatgeFichersEinaant](/imatgeseinaant/archiuseinaANT.png)
 
