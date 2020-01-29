@@ -425,7 +425,7 @@ BUILD SUCCESSFUL
 Total time: 2 seconds
 
 ```
-Un altra captura de la meua maquina virtual:
+Un altra captura de la meua máquina virtual:
 
 ![ImatgeexecucioEinaant](/imatgeseinaant/rundargseinant.png)
 
