@@ -279,25 +279,28 @@ Com veiem, ens mostra que ant no es troba instal·lat al sistema, però tenim un
 
 Per tal d'instal·lar ant, farem:
 
+```
 $ sudo apt install ant
+```
 
-2.3. Ús d'Ant
+# 3. Ús d'Ant
 
 Una vegada instal·lat, i amb el fitxer build.xml creat, podrem llençar ant amb els diferents targets. Veiem l'eixida de cadascun:
 
     Per tal de compilar el projecte, farem:
-
+```
 $ ant compile
-Buildfile: /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/calcula/build.xml
+Buildfile: /home/alumne/Escritorio/einaant/projecte/build.xml
 
 clean:
 
 compile:
     [mkdir] Created dir: ./calcula/classes
-    [javac] Compiling 2 source files to /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/calcula/classes
+    [javac] Compiling 2 source files to /home/alumne/Escritorio/einaant/projecte/classes
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
+```
 
 Com veiem, ens llença primerament la tasca clean. Si és la primera vegada que l'executem, com a l'exemple, veiem que no fa res, ja que no té res a netejar. Si ja tinguérem la carpeta classes creada d'altres compilacions, ara ens indicaría que ha esborrat aquesta carpeta.
 
