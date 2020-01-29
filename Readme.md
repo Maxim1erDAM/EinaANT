@@ -31,6 +31,7 @@ Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació 
 
 4 directories, 3 files
 ```
+![ImatgeTreeEinaant](/imatgeseinant/treeeinaant.png)
 
 -Com veiem, el codi font està organitzat en una estructura de carpetes.
 
