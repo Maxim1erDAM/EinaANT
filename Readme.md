@@ -222,7 +222,7 @@ Feu ús d'aquest mètode en l'aplicació, escrivint, immediatament després d'es
 Apache Ant és una llibrería de Java que ens permet automatitzar el procés de construcció d'aplicacions. El seu ús principal ha estat Java, tot i que també es pot utilitzar per a aplicacions en altres llenguatges. Inicialment va ser part del projecte Apache Tomcat, però l'any 2000 es va llençar com a projecte independent.
 2.1. El fitxer build.xml
 
-  >***`El fitxer de construcció d'Ant està escrit en XML (generalment s'anomena build.xml), i conté diversos targets, que representen les diferents fases de construcció (semblant als targets del make).`***
+El fitxer de construcció d'Ant està escrit en XML (generalment s'anomena build.xml), i conté diversos targets, que representen les diferents fases de construcció (semblant als targets del make).
 
   >***`Veiem un exemple per a la nostra calculadora:`***
 
@@ -260,6 +260,7 @@ Com veiem, l'XML té tres etiquetes target:
 2.2. Instal·lació d'ant
 
 Per tal de comprovar el funcionament, cal primerament instal·lar el paquet ant. Per comprovar si el tenim instal·lat, farem:
+
 ```
 $ apt-cache policy ant
 ant:
@@ -288,7 +289,8 @@ $ sudo apt install ant
 
 Una vegada instal·lat, i amb el fitxer build.xml creat, podrem llençar ant amb els diferents targets. Veiem l'eixida de cadascun:
 
-    Per tal de compilar el projecte, farem:
+Per tal de compilar el projecte, farem:
+    
 ```
 $ ant compile
 Buildfile: /home/alumne/Escritorio/einaant/projecte/build.xml
