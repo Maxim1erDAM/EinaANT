@@ -174,7 +174,7 @@ En primer lloc, definim el nom del paquet al que pertany el codi (package com.ie
 Després definim la classe pública Calcula que contindrà dos atributs de tipus float: operand1 i operand2. Com veiem al codi, aquests atributs s'han definit com a estàtics static. Açò significa que són atributs propis de la classe (no prenen valor en cada instància que generem a partir d'ella). A efectes pràctics, açò ens serveis per poder utilitzar el main dins la classe sense necessitat de crear un objecte d'aquesta. Aquests atributs ens serviran per emmagatzemar els operands sobre els què es realitzaran les operacions.
 
 
-El fitxer corresponent a la classe és el com/ieseljust/edd/calc/Calcula.java:
+El fitxer corresponent a la classe és el fitxer com/ieseljust/edd/calc/Calcula.java:
 
 ```
 package com.ieseljust.edd.calc;
