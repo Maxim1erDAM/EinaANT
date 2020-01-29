@@ -286,17 +286,17 @@ Una vegada instal·lat, i amb el fitxer build.xml creat, podrem llençar ant amb
 Per tal de compilar el projecte, farem:
     
 ```
-$ ant compile
 Buildfile: /home/alumne/Escritorio/einaant/projecte/build.xml
 
 clean:
 
 compile:
-    [mkdir] Created dir: ./calcula/classes
+    [mkdir] Created dir: /home/alumne/Escritorio/einaant/projecte/classes
     [javac] Compiling 2 source files to /home/alumne/Escritorio/einaant/projecte/classes
 
 BUILD SUCCESSFUL
-Total time: 0 seconds
+Total time: 2 seconds
+
 ```
 
 Com veiem, ens llença primerament la tasca clean. Si és la primera vegada que l'executem, com a l'exemple, veiem que no fa res, ja que no té res a netejar. Si ja tinguérem la carpeta classes creada d'altres compilacions, ara ens indicaría que ha esborrat aquesta carpeta.
@@ -307,20 +307,23 @@ Una vegada feta la compilació, podem observar l'estructura generada:
 
 ```
 .
-|-- build.xml
-|-- classes
-|   `-- com
-|       `-- ieseljust
-|           `-- edd
-|               `-- calc
-|                   |-- Calcula.class
-|                   `-- Calculadora.class
-`-- com
-    `-- ieseljust
-        `-- edd
-            `-- calc
-                |-- Calculadora.java
-                `-- Calcula.java
+├── build.xml
+├── classes
+│   └── com
+│       └── ieseljust
+│           └── edd
+│               └── calc
+│                   ├── Calcula.class
+│                   └── Calculadora.class
+└── com
+    └── ieseljust
+        └── edd
+            └── calc
+                ├── Calculadora.java
+                └── Calcula.java
+
+9 directories, 5 files
+
 ```
 
 Com veiem, ens ha generat una carpeta classes tal i com hem indicat al target, i dins d'aquesta, ens ha replicat tota l'estructura de carpetes corresponent al paquet, amb els fitxers .class compilats a dins.
