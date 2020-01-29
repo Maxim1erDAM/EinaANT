@@ -127,23 +127,17 @@ public class Calculadora {
     }
 }
 ```
-    Com veiem, la classe es defineix amb public class, indicant que es tracta d'una classe pública (es pot utilitzar des de fora).
-
+   >***` Com veiem, la classe es defineix amb public class, indicant que es tracta d'una classe pública (es pot utilitzar des de fora).
     Dins la classe hem definit:
-
         Atributs, com lastResult i lastOp, que hem definit com a private. El primer és un número en coma flotant (float) i el segon una cadena de caràcters (String). El fet de definir-los com a privats significa que directament no es pot accedir a aquests atributs des de fora de la classe. A grans trets, els atributs privats d'una classe podríen interpretar-se com variable globals només a la classe. Aquests atributs, el que fan és emmagatzemar el resultat de la última operació realitzada i quina ha estat aquesta.
-
         Mètodes (funcions), com getLastResult, getLastOp, que es coneixen com a getters, i són mètodes a través dels quals podem consultar els valors dels atributs privats. També podem definir setters, que estableixen aquests valors, però no són necessaris a l'exemple. Aquests es defineixen com a public, per tal de poder utilitzar-los des de fora de la classe.
-        
-        Mètodes (funcions) com suma, resta, multiplica i divideix que són els qui realitzen les diferents operacions, guardant el resultat i l'operació i retornant el resultat. Dins aquests mètodes veurem que apareix la paraula reservada this. Aquesta s'utilitza per fer referència al propi objecte. Així, per exemple, this.lastOp fa referència a l'atribut lastOp del propi objecte.
-
+        Mètodes (funcions) com suma, resta, multiplica,divideix, majorque i mitja que són els qui realitzen les diferents operacions, guardant el resultat i l'operació i retornant el resultat. Dins aquests mètodes veurem que apareix la paraula reservada this. Aquesta s'utilitza per fer referència al propi objecte. Així, per exemple, this.lastOp fa referència a l'atribut lastOp del propi objecte.
 El codi font de l'aplicació està bastant explicat, pel que poden consultar en ell la resta de mètodes. Tingueu en compte que aquest és un exemple introductori a Java, i que hi ha molt més contingut pel que respecta a la programació orientada a objectes.
-Classe com.ieseljust.edd.calc.Calcula
-
+```Classe com.ieseljust.edd.calc.Calcula```
 Aquesta és la classe que implementa la funcionalitat principal (el mètode main), i fa ús de la llibreria que hem creat amb la classe Calculadora.
+El fitxer corresponent a la classe és el com/ieseljust/edd/calc/Calcula.java:`*** 
 
-El fitxer corresponent a la classe és el com/ieseljust/edd/calc/Calcula.java:
-
+```
 package com.ieseljust.edd.calc;
 
 import com.ieseljust.edd.calc.Calculadora;
@@ -154,7 +148,7 @@ public class Calcula {
 
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.out.println("\nSintaxi incorrecta. Necessite dos números.");
+            System.out.println("\nSintaxi incorrecta. La calculadora necessita 2 números.");
             System.exit(-1);
         }
 
@@ -167,18 +161,20 @@ public class Calcula {
         System.out.println("La resta entre "+operand1+" i "+operand2+" és "+myCalc.resta(operand1, operand2));
         System.out.println("La multiplicació entre "+operand1+" i "+operand2+" és "+myCalc.multiplica(operand1, operand2));
         System.out.println("La divisió entre "+operand1+" i "+operand2+" és "+myCalc.divideix(operand1, operand2));
-        System.out.println("Última operació realitzada: "+myCalc.getLastOp()+"; Últim resultat: "+myCalc.getLastResult());
+	System.out.println("El número major entre els números pasat com a arguments, que són: "+operand1+" i "+operand2+". El major es el número:"+myCalc.majorque(operand1, operand2));
+        System.out.println("La mitja entre els números pasat com a arguments, que són: "+operand1+" i "+operand2+". La mitja es el número:"+myCalc.mitja(operand1, operand2));
+	System.out.println("Última operació realitzada: "+myCalc.getLastOp()+"; Últim resultat: "+myCalc.getLastResult());
     }
 }
+```
 
-Analitzem el codi per parts.
-
+>***`Analitzem el codi per parts.
     En primer lloc, definim el nom del paquet al que pertany el codi (package com.ieseljust.edd.calc;) i importem la llibreria Calculadora (import com.ieseljust.edd.calc.Calculadora;).
     Després definim la classe pública Calcula que contindrà dos atributs de tipus float: operand1 i operand2. Com veiem al codi, aquests atributs s'han definit com a estàtics static. Açò significa que són atributs propis de la classe (no prenen valor en cada instància que generem a partir d'ella). A efectes pràctics, açò ens serveis per poder utilitzar el main dins la classe sense necessitat de crear un objecte d'aquesta. Aquests atributs ens serviran per emmagatzemar els operands sobre els què es realitzaran les operacions.
     Aquesta classe només té un mètode, el main. Dins aquest mètode fem el següent:
         En primer lloc, i mitjançant el vector d'arguments args que rep el main, comprovem, que li passem dos paràmetres al programa (en la invocació d'aquest des de la línia d'ordres). Amb aquest vector, donem valor als atributs operand1 i operand2.
         Per tal de poder utilitzar la classe Calculadora, hem de crear un objecte d'aquest tipus. Açò ho farem mitjançant l'operador new, i definint l'objecte com si definirem una variable del tipus de la classe: Calculadora myCalc=new Calculadora();. En aquest cas, hem definit l'objecte myCalc de tipus Calculadora i li hem assignat el resultat de la creació d'un nou (new) objecte Calculadora. Ara, mitjançant MyCalc ja podem accedir a les funcionalitats que aquesta llibreria ens proporciona.
-        Finalment, mostrem els resultats, accedint als valors emmagatzemats d'operand1 i operand2, en aquest cas, sense this, ja que es tracta d'atributs de classe, i invocant als diferents mètodes de la llibreria a través de l'objecte myCalc; per exemple myCalc.suma(operand1, operand2).
+        Finalment, mostrem els resultats, accedint als valors emmagatzemats d'operand1 i operand2, en aquest cas, sense this, ja que es tracta d'atributs de classe, i invocant als diferents mètodes de la llibreria a través de l'objecte myCalc; per exemple myCalc.suma(operand1, operand2).`*** 
 
 Compilació i execució
 
