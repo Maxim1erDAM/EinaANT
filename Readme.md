@@ -260,7 +260,7 @@ Com veiem, l'XML té tres etiquetes target:
 2.2. Instal·lació d'ant
 
 Per tal de comprovar el funcionament, cal primerament instal·lar el paquet ant. Per comprovar si el tenim instal·lat, farem:
-
+```
 $ apt-cache policy ant
 ant:
   Instal·lat: (cap)
@@ -276,6 +276,7 @@ ant:
         500 http://archive.ubuntu.com/ubuntu bionic/universe i386 Packages
 
 Com veiem, ens mostra que ant no es troba instal·lat al sistema, però tenim una versió candidata als repositoris d'Ubuntu (la 1.10.5-3~18.04). En cas d'estar instal·lada, en lloc de (cap), se'ns mostraria la versió d'aquesta.
+```
 
 Per tal d'instal·lar ant, farem:
 
