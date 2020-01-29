@@ -293,6 +293,7 @@ Després de fer la neteja, fa la tasca de compilació, amb la que crea la carpet
 
 Una vegada feta la compilació, podem observar l'estructura generada:
 
+```
 .
 |-- build.xml
 |-- classes
@@ -308,6 +309,7 @@ Una vegada feta la compilació, podem observar l'estructura generada:
             `-- calc
                 |-- Calculadora.java
                 `-- Calcula.java
+```
 
 Com veiem, ens ha generat una carpeta classes tal i com hem indicat al target, i dins d'aquesta, ens ha replicat tota l'estructura de carpetes corresponent al paquet, amb els fitxers .class compilats a dins.
 
