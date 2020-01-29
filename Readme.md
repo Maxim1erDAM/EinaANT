@@ -26,14 +26,7 @@ Posteriorment, veurem com incloure llibreríes en els nostres projectes i gestio
 Aplicació d'exemple
 
 Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació de la calculadora que vam veure amb el make. Per a això, disposem de dos fitxers .java, organitzats de ls següent forma:
-
-.
-`-- com
-    `-- ieseljust
-        `-- edd
-            `-- calc
-                |-- Calculadora.java
-                `-- Calcula.java
+->Imatge de l'arbre de imatges i directoris.
 `***  
 
 
