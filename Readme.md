@@ -235,8 +235,9 @@ $ java com.ieseljust.edd.calc.Calcula num1 num2
 </project>
 
 ```
->***`Nota: Aquest fitxer build.xml l'haurem de crear al directori arrel del codi de la nostra aplicació. Al cas de la calculadora, haurà d'estar al mateix directori on està el directori arrel del projecte.
-Com veiem, l'XML té tres etiquetes target:`***
+
+Nota: Aquest fitxer build.xml l'haurem de crear al directori arrel del codi de la nostra aplicació. Al cas de la calculadora, haurà d'estar al mateix directori on està el directori arrel del projecte.
+Com veiem, l'XML té tres etiquetes target:
 
 >***`clean: que neteja les eixides anteriors de la construcció, concretament, eliminant la carpeta classes.`***
 
