@@ -427,4 +427,4 @@ Un altra captura de la meua maquina virtual:
 Com veiem, en aquest cas, com que no havíem llençat prèviament el ant clean, la tasca clean, sí que ha esborrat el directori classes. Posteriorment, ha fet la compilació, i finalment, l'execuió.
 Finalment, si volguérem netejar el projecte, fariem ús de ant clean. `***
 
->***`D'aquesta manera i gràcies a Git podem descarregar cualsevol aplicació de Java o C i compilarla descarregant el repositori de Github la construccío de l'aplicació preparada per a les eines d'automatització es Make, Ant, Maven o Gradle.`*** 
+>***`D'aquesta manera i gràcies a Git podem descarregar cualsevol aplicació de Java o C i compilarla descarregant del repositori de Github el projecte, amb la construcció de l'aplicació preparada per a les eines d'automatització de Make, Ant, Maven o Gradle.`*** 
