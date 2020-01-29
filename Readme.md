@@ -109,8 +109,8 @@ public class Calculadora {
 }
 ```
 
->***`Anem a explicar-lo per parts:
-    En primer lloc, s'indica el nom del paquet al què pertany el programa, de forma completa. Fixeu-se que ve definit per l'estructura de directoris on es troba: `*** 
+Anem a explicar-lo per parts:
+En primer lloc, s'indica el nom del paquet al què pertany el programa, de forma completa. Fixeu-se que ve definit per l'estructura de directoris on es troba:
     
 package com.ieseljust.edd.calc
 
