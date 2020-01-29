@@ -179,42 +179,45 @@ public class Calcula {
 }
 ```
 
->***`Analitzem el codi per parts.
+Analitzem el codi per parts.
     En primer lloc, definim el nom del paquet al que pertany el codi (package com.ieseljust.edd.calc;) i importem la llibreria Calculadora (import com.ieseljust.edd.calc.Calculadora;).
     Després definim la classe pública Calcula que contindrà dos atributs de tipus float: operand1 i operand2. Com veiem al codi, aquests atributs s'han definit com a estàtics static. Açò significa que són atributs propis de la classe (no prenen valor en cada instància que generem a partir d'ella). A efectes pràctics, açò ens serveis per poder utilitzar el main dins la classe sense necessitat de crear un objecte d'aquesta. Aquests atributs ens serviran per emmagatzemar els operands sobre els què es realitzaran les operacions.
     Aquesta classe només té un mètode, el main. Dins aquest mètode fem el següent:
         En primer lloc, i mitjançant el vector d'arguments args que rep el main, comprovem, que li passem dos paràmetres al programa (en la invocació d'aquest des de la línia d'ordres). Amb aquest vector, donem valor als atributs operand1 i operand2.
         Per tal de poder utilitzar la classe Calculadora, hem de crear un objecte d'aquest tipus. Açò ho farem mitjançant l'operador new, i definint l'objecte com si definirem una variable del tipus de la classe: Calculadora myCalc=new Calculadora();. En aquest cas, hem definit l'objecte myCalc de tipus Calculadora i li hem assignat el resultat de la creació d'un nou (new) objecte Calculadora. Ara, mitjançant MyCalc ja podem accedir a les funcionalitats que aquesta llibreria ens proporciona.
-        Finalment, mostrem els resultats, accedint als valors emmagatzemats d'operand1 i operand2, en aquest cas, sense this, ja que es tracta d'atributs de classe, i invocant als diferents mètodes de la llibreria a través de l'objecte myCalc; per exemple myCalc.suma(operand1, operand2).`*** 
+        Finalment, mostrem els resultats, accedint als valors emmagatzemats d'operand1 i operand2, en aquest cas, sense this, ja que es tracta d'atributs de classe, i invocant als diferents mètodes de la llibreria a través de l'objecte myCalc; per exemple myCalc.suma(operand1, operand2).
 
->***`Compilació i execució desde java i javac en terminal
+Compilació i execució desde java i javac en terminal
 Per tal de compilar directament el nostre programa, podem fer:
-Com compilar de forma individual els dos fitxers:`*** 
+Com compilar de forma individual els dos fitxers:
+
 ```
 $ javac com/ieseljust/edd/calc/Calculadora.java
 $ javac com/ieseljust/edd/calc/Calcula.java
 ```
->***` Com compilar directament tots els fitxers .java del directori calc:`*** 
+
+Com compilar directament tots els fitxers .java del directori calc:
 
 ```
 $ javac com/ieseljust/edd/calc/*.java
 ```
 
->***`De tota manera, javac és suficientment intel·ligent com per saber que si compile Calcula.java que importa la classe Calculadora, ha de compilar aquesta també si no existeix el fitxer .class corresponent.
-Una vegada generats els fitxers de bytecode, executem la calculadora amb:`*** 
+De tota manera, javac és suficientment intel·ligent com per saber que si compile Calcula.java que importa la classe Calculadora, ha de compilar aquesta també si no existeix el fitxer .class corresponent.
+Una vegada generats els fitxers de bytecode, executem la calculadora amb:
+
 ```
 $ java com.ieseljust.edd.calc.Calcula num1 num2
 ```
 
->***`Reemplaçant num1 i num2 pels números que desitgem.`*** 
+Reemplaçant num1 i num2 pels números que desitgem
 
-#Activitat Practica
+# Activitat Practica
 
->***`A partir del codi proporcionat, implementarem la nova funcionalitat a la calculadora MajorQue, que indique si el primer argument que li proporcionem és major que el segon. El tipus de valor de retorn haurà de ser lògic.`*** 
+A partir del codi proporcionat, implementarem la nova funcionalitat a la calculadora MajorQue, que indique si el primer argument que li proporcionem és major que el segon. El tipus de valor de retorn haurà de ser lògic.
 
-   >***` Feu ús d'aquest mètode en l'aplicació, escrivint, immediatament després d'escriure el resultat de la divisió, el resultat d'aquesta comparació.`*** 
+Feu ús d'aquest mètode en l'aplicació, escrivint, immediatament després d'escriure el resultat de la divisió, el resultat d'aquesta comparació.
 
-#2. Apache Ant (Another Neat Tool)
+# 2. Apache Ant (Another Neat Tool)
 
   >***`Apache Ant és una llibrería de Java que ens permet automatitzar el procés de construcció d'aplicacions. El seu ús principal ha estat Java, tot i que també es pot utilitzar per a aplicacions en altres llenguatges. Inicialment va ser part del projecte Apache Tomcat, però l'any 2000 es va llençar com a projecte independent.
 2.1. El fitxer build.xml`***
