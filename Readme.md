@@ -31,7 +31,7 @@ Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació 
 
 4 directories, 3 files
 ```
-![ImatgeTreeEinaant](/imatgeseinaant/treeeinaant.png)
+![ImatgeTreeEinaant](/imatgeseinaant/treeeinaANT.png)
 
 -Com veiem, el codi font està organitzat en una estructura de carpetes.
 
@@ -275,6 +275,11 @@ Com veiem, l'XML té tres etiquetes target:
 >***`compile: Que realitza la compilació de l'aplicació. Com veiem, depèn de clean, i el que fa és crear la carpeta classes, i invocar el compilador de java (javac). L'atribut includeantruntime s'afig per tal d'evitar un missatge d'alerta a partir de la versió 1.8.`***
 
 >***`run: Per tal d'executar l'aplicació. Com veiem, depèn de la tasca de compilació, i el que fa és llançar java sobre la classe com.ieseljust.edd.calc.Calcula que es troba al classpath classes. A més, dins l'etiqueta que invoca la màquina virtual de Java (<java>), afegim dues etiquetes <arg>, que agafaran els arguments que passem per la línia d'ordres, amb les variables arg0 i arg1.`***
+
+
+Aixi qudarien tots els fichers.
+
+![ImatgeFichersEinaant](/imatgeseinaant/archiuseinaANT.png)
 
 # 2.2. Instal·lació d'ant
 
