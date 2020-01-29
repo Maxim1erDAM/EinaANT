@@ -253,7 +253,7 @@ Com veiem, l'XML té tres etiquetes target:
 
 # 2.2. Instal·lació d'ant
 
-Per tal de comprovar el funcionament, cal primerament instal·lar el paquet ant. Per comprovar si el tenim instal·lat, farem:
+Per tal de comprovar el funcionament, cal primerament instal·lar el paquet ant. "apt-cache policy ant", si no el tenim instalat, mos mostrara:
 
 ```
 $ apt-cache policy ant
