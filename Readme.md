@@ -109,10 +109,11 @@ public class Calculadora {
 >***`Anem a explicar-lo per parts:
     En primer lloc, s'indica el nom del paquet al què pertany el programa, de forma completa. Fixeu-se que ve definit per l'estructura de directoris on es troba: `*** 
     
->***`package com.ieseljust.edd.calc;`*** 
+package com.ieseljust.edd.calc
 
-    >***`Després es defineix la classe Calculadora. Recordeu que en Java tot ha d'estar dins una classe, tant el main com les funcions (mètodes) que definim. L'estructura general d'aquesta classe Calculadora és la següent (mostrem només algunes parts):`***  
+Després es defineix la classe Calculadora. Recordeu que en Java tot ha d'estar dins una classe, tant el main com les funcions (mètodes) que definim. L'estructura general d'aquesta classe Calculadora és la següent (mostrem només algunes parts):
 
+```
 public class Calculadora {
 
     private float lastResult;
@@ -125,7 +126,7 @@ public class Calculadora {
     public float suma(float op1, float op2){ ... }
     }
 }
-
+```
     Com veiem, la classe es defineix amb public class, indicant que es tracta d'una classe pública (es pot utilitzar des de fora).
 
     Dins la classe hem definit:
