@@ -236,11 +236,13 @@ $ java com.ieseljust.edd.calc.Calcula num1 num2
 
 ```
 >***`Nota: Aquest fitxer build.xml l'haurem de crear al directori arrel del codi de la nostra aplicació. Al cas de la calculadora, haurà d'estar al mateix directori on està el directori arrel del projecte.
-Com veiem, l'XML té tres etiquetes target:
+Com veiem, l'XML té tres etiquetes target:`***
 
->***clean: que neteja les eixides anteriors de la construcció, concretament, eliminant la carpeta classes.
-    compile: Que realitza la compilació de l'aplicació. Com veiem, depèn de clean, i el que fa és crear la carpeta classes, i invocar el compilador de java (javac). L'atribut includeantruntime s'afig per tal d'evitar un missatge d'alerta a partir de la versió 1.8.
-    run: Per tal d'executar l'aplicació. Com veiem, depèn de la tasca de compilació, i el que fa és llançar java sobre la classe com.ieseljust.edd.calc.Calcula que es troba al classpath classes. A més, dins l'etiqueta que invoca la màquina virtual de Java (<java>), afegim dues etiquetes <arg>, que agafaran els arguments que passem per la línia d'ordres, amb les variables arg0 i arg1.`***
+>***`clean: que neteja les eixides anteriors de la construcció, concretament, eliminant la carpeta classes.`***
+
+>***`compile: Que realitza la compilació de l'aplicació. Com veiem, depèn de clean, i el que fa és crear la carpeta classes, i invocar el compilador de java (javac). L'atribut includeantruntime s'afig per tal d'evitar un missatge d'alerta a partir de la versió 1.8.`***
+
+>***`run: Per tal d'executar l'aplicació. Com veiem, depèn de la tasca de compilació, i el que fa és llançar java sobre la classe com.ieseljust.edd.calc.Calcula que es troba al classpath classes. A més, dins l'etiqueta que invoca la màquina virtual de Java (<java>), afegim dues etiquetes <arg>, que agafaran els arguments que passem per la línia d'ordres, amb les variables arg0 i arg1.`***
 
 2.2. Instal·lació d'ant
 
