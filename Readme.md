@@ -32,7 +32,7 @@ Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació 
 4 directories, 3 files
 ```
 
-Una captura de la meua maquina virtual:
+Una captura de la meua máquina virtual:
 
 ![ImatgeTreeEinaant](/imatgeseinaant/treeeinaANT.png)
 
@@ -149,12 +149,15 @@ public class Calculadora {
 Com veiem, la classe es defineix amb public class, indicant que es tracta d'una classe pública (es pot utilitzar des de fora).
 Dins la classe hem definit:
 
--Atributs, com lastResult i lastOp, que hem definit com a private. El primer és un número en coma flotant (float) i el segon una cadena de caràcters (String). El fet de definir-los com a privats significa que directament no es pot accedir a aquests atributs des de fora de la classe. A grans trets, els atributs privats d'una classe podríen interpretar-se com variable globals només a la classe. Aquests atributs, el que fan és emmagatzemar el resultat de la última operació realitzada i quina ha estat aquesta.
+-Atributs, com lastResult i lastOp, que hem definit com a private. El primer és un número en coma flotant (float) i el segon una cadena de caràcters (String). El fet de definir-los com a privats significa que directament no es pot accedir a aquests atributs des de fora de la classe. 
 	
 -Mètodes (funcions), com getLastResult, getLastOp, que es coneixen com a getters, i són mètodes a través dels quals podem consultar els valors dels atributs privats. També podem definir setters, que estableixen aquests valors, però no són necessaris a l'exemple. Aquests es defineixen com a public, per tal de poder utilitzar-los des de fora de la classe.
 	
--Mètodes (funcions) com suma, resta, multiplica,divideix, majorque i mitja que són els qui realitzen les diferents operacions, guardant el resultat i l'operació i retornant el resultat. Dins aquests mètodes veurem que apareix la paraula reservada this. Aquesta s'utilitza per fer referència al propi objecte. Així, per exemple, this.lastOp fa referència a l'atribut lastOp del propi objecte.
-El codi font de l'aplicació està bastant explicat, pel que poden consultar en ell la resta de mètodes. Tingueu en compte que aquest és un exemple introductori a Java, i que hi ha molt més contingut pel que respecta a la programació orientada a objectes.La clase és "com.ieseljust.edd.calc.Calcula"
+-Mètodes (funcions) com suma, resta, multiplica,divideix, majorque i mitja que són els qui realitzen les diferents operacions, guardant el resultat i l'operació i retornant el resultat. 
+
+La paraula this s'utilitza per fer referència al propi objecte. Així, per exemple, this.lastOp fa referència a l'atribut lastOp del propi objecte.
+
+La clase és "com.ieseljust.edd.calc.Calcula"
 
 Aquesta és la classe que implementa la funcionalitat principal (el mètode main), i fa ús de la llibreria que hem creat amb la classe Calculadora.
 
@@ -197,8 +200,6 @@ public class Calcula {
     }
 }
 ```
-
-
 Aquesta classe només té un mètode, el main. Dins aquest mètode fem el següent:
     
 En primer lloc, i mitjançant el vector d'arguments args que rep el main, comprovem, que li passem dos paràmetres al programa (en la invocació d'aquest des de la línia d'ordres). Amb aquest vector, donem valor als atributs operand1 i operand2.
@@ -424,4 +425,5 @@ Un altra captura de la meua maquina virtual:
 
 >***`Fixeu-vos que l'ordre ant run afig els dos arguments que necessita la nostra aplicació amb -Darg0=3 -Darg1=4. És a dir, posem -D seguit del nom de l'argument tal i com s'anomena al fitxer build.xml.
 Com veiem, en aquest cas, com que no havíem llençat prèviament el ant clean, la tasca clean, sí que ha esborrat el directori classes. Posteriorment, ha fet la compilació, i finalment, l'execuió.
-Finalment, si volguérem netejar el projecte, fariem ús de ant clean.`*** 
+Finalment, si volguérem netejar el projecte, fariem ús de ant clean. 
+D'aquesta manera i gràcies a Git podem descarregar cualsevol aplicació de Java o C i compilarla descarregant el repositori de Github la construccío de l'aplicació preparada per a les eines d'automatització es Make, Ant, Maven o Gradle.`*** 
