@@ -28,13 +28,14 @@ Com a aplicació Java a utilitzar en l'exemple, anem a implementar l'aplicació 
 Aquesta estructura, ens determinarà el nom del paquet al que pertànyen els programes. Anem a veure el codi de cadascun.
 Classe com.ieseljust.edd.calc.Calculadora`*** 
 
-Aquesta classe s'implementa al fitxer com/ieseljust/edd/calc/Calculadora.java:
-
+>***`Aquesta classe s'implementa al fitxer com/ieseljust/edd/calc/Calculadora.java:`*** 
 package com.ieseljust.edd.calc;
 
+```
 public class Calculadora {
 
     private float lastResult;
+
     private String lastOp;
 
     public float getLastResult(){
@@ -45,25 +46,25 @@ public class Calculadora {
         return this.lastOp;
     }
 
-    public float suma(float op1, float op2){
-        float result=op1+op2;
+    public float suma(float operand1, float operand2){
+        float result=operand1+operand2;
         this.lastResult=result;
         this.lastOp="Suma";
 
         return result;
     }
 
-    public float resta(float op1, float op2){
-        float result=op1-op2;
+    public float resta(float operand1, float operand2){
+        float result=operand1-operand2;
         this.lastResult=result;
         this.lastOp="Resta";
 
         return result;
     }
 
-    public float multiplica(float op1, float op2){
+    public float multiplica(float operand1, float operand2){
         // Fem els càlculs
-        float result=op1*op2;
+        float result=operand1*operand2;
 
         // Actualitzem els atributs de la classe
         this.lastResult=result;
@@ -73,9 +74,9 @@ public class Calculadora {
         return result;
     }
 
-    public float divideix(float op1, float op2){
+    public float divideix(float operand1, float operand2){
         // Fem els càlculs
-        float result=op1/op2;
+        float result=operand1/operand2;
 
         // Actualitzem els atributs de la classe
         this.lastResult=result;
@@ -85,15 +86,32 @@ public class Calculadora {
         return result;
     }
 
+    public float majorque(float operand1, float operand2){
+	float maximo = Math.max(operand1, operand2);
+
+	float result=maximo;
+	this.lastResult=result;
+	this.lastOp="Majorque";
+	return result;
+    }
+	
+    public float mitja(float operand1, float operand2){
+	float mitja = ((operand1+operand2)/2);
+
+	float result=mitja;
+	this.lastResult=result;
+	this.lastOp="Mitja";
+	return result;
+    }	
 }
+```
 
-Anem a explicar-lo per parts:
+>***`Anem a explicar-lo per parts:
+    En primer lloc, s'indica el nom del paquet al què pertany el programa, de forma completa. Fixeu-se que ve definit per l'estructura de directoris on es troba: `*** 
+    
+>***`package com.ieseljust.edd.calc;`*** 
 
-    En primer lloc, s'indica el nom del paquet al què pertany el programa, de forma completa. Fixeu-se que ve definit per l'estructura de directoris on es troba:
-
-package com.ieseljust.edd.calc;
-
-    Després es defineix la classe Calculadora. Recordeu que en Java tot ha d'estar dins una classe, tant el main com les funcions (mètodes) que definim. L'estructura general d'aquesta classe Calculadora és la següent (mostrem només algunes parts):
+    >***`Després es defineix la classe Calculadora. Recordeu que en Java tot ha d'estar dins una classe, tant el main com les funcions (mètodes) que definim. L'estructura general d'aquesta classe Calculadora és la següent (mostrem només algunes parts):`***  
 
 public class Calculadora {
 
@@ -115,6 +133,7 @@ public class Calculadora {
         Atributs, com lastResult i lastOp, que hem definit com a private. El primer és un número en coma flotant (float) i el segon una cadena de caràcters (String). El fet de definir-los com a privats significa que directament no es pot accedir a aquests atributs des de fora de la classe. A grans trets, els atributs privats d'una classe podríen interpretar-se com variable globals només a la classe. Aquests atributs, el que fan és emmagatzemar el resultat de la última operació realitzada i quina ha estat aquesta.
 
         Mètodes (funcions), com getLastResult, getLastOp, que es coneixen com a getters, i són mètodes a través dels quals podem consultar els valors dels atributs privats. També podem definir setters, que estableixen aquests valors, però no són necessaris a l'exemple. Aquests es defineixen com a public, per tal de poder utilitzar-los des de fora de la classe.
+        
         Mètodes (funcions) com suma, resta, multiplica i divideix que són els qui realitzen les diferents operacions, guardant el resultat i l'operació i retornant el resultat. Dins aquests mètodes veurem que apareix la paraula reservada this. Aquesta s'utilitza per fer referència al propi objecte. Així, per exemple, this.lastOp fa referència a l'atribut lastOp del propi objecte.
 
 El codi font de l'aplicació està bastant explicat, pel que poden consultar en ell la resta de mètodes. Tingueu en compte que aquest és un exemple introductori a Java, i que hi ha molt més contingut pel que respecta a la programació orientada a objectes.
