@@ -6,7 +6,7 @@
 >
 >***[1. Eines d'automatització en Java.](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#1-eines-dautomatitzaci%C3%B3-en-java)***
 >
->***[2. Apache Ant (Another Neat Tool) - Activitat Practica](https://github.com/Maxim1erDAM/Unitat4#2-com-utilitzar-git-part-1)***
+>***[2. Apache Ant (Another Neat Tool) - Activitat Practica](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#2-apache-ant-another-neat-tool---activitat-practica)***
 >
 >***[3. Ús d'Ant](https://github.com/Maxim1erDAM/Unitat4/blob/master/Readme.md#3-make-i-el-fitxer-makefile)***
 
