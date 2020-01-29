@@ -237,7 +237,7 @@ Apache Ant és una llibrería de Java que ens permet automatitzar el procés de 
 
 El fitxer de construcció d'Ant està escrit en XML (generalment s'anomena build.xml), i conté diversos targets, que representen les diferents fases de construcció (semblant als targets del make).
 
-  >***`Veiem un exemple per a la nostra calculadora:`***
+>***`Veiem un exemple per a la nostra calculadora:`***
 
 ```
 <project>
