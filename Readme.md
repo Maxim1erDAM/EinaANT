@@ -426,4 +426,5 @@ Un altra captura de la meua maquina virtual:
 >***`Fixeu-vos que l'ordre ant run afig els dos arguments que necessita la nostra aplicació amb -Darg0=3 -Darg1=4. És a dir, posem -D seguit del nom de l'argument tal i com s'anomena al fitxer build.xml.
 Com veiem, en aquest cas, com que no havíem llençat prèviament el ant clean, la tasca clean, sí que ha esborrat el directori classes. Posteriorment, ha fet la compilació, i finalment, l'execuió.
 Finalment, si volguérem netejar el projecte, fariem ús de ant clean. `***
+
 >***`D'aquesta manera i gràcies a Git podem descarregar cualsevol aplicació de Java o C i compilarla descarregant el repositori de Github la construccío de l'aplicació preparada per a les eines d'automatització es Make, Ant, Maven o Gradle.`*** 
