@@ -209,18 +209,18 @@ Una vegada generats els fitxers de bytecode, executem la calculadora amb:
 $ java com.ieseljust.edd.calc.Calcula num1 num2
 ```
 
-Reemplaçant num1 i num2 pels números que desitgem
+Reemplaçant num1 i num2 pels números que desitgem.
 
-# Activitat Practica
+
+
+# 2. Apache Ant (Another Neat Tool) - Activitat Practica
 
 A partir del codi proporcionat, implementarem la nova funcionalitat a la calculadora MajorQue, que indique si el primer argument que li proporcionem és major que el segon. El tipus de valor de retorn haurà de ser lògic.
 
 Feu ús d'aquest mètode en l'aplicació, escrivint, immediatament després d'escriure el resultat de la divisió, el resultat d'aquesta comparació.
 
-# 2. Apache Ant (Another Neat Tool)
-
-  >***`Apache Ant és una llibrería de Java que ens permet automatitzar el procés de construcció d'aplicacions. El seu ús principal ha estat Java, tot i que també es pot utilitzar per a aplicacions en altres llenguatges. Inicialment va ser part del projecte Apache Tomcat, però l'any 2000 es va llençar com a projecte independent.
-2.1. El fitxer build.xml`***
+Apache Ant és una llibrería de Java que ens permet automatitzar el procés de construcció d'aplicacions. El seu ús principal ha estat Java, tot i que també es pot utilitzar per a aplicacions en altres llenguatges. Inicialment va ser part del projecte Apache Tomcat, però l'any 2000 es va llençar com a projecte independent.
+2.1. El fitxer build.xml
 
   >***`El fitxer de construcció d'Ant està escrit en XML (generalment s'anomena build.xml), i conté diversos targets, que representen les diferents fases de construcció (semblant als targets del make).`***
 
