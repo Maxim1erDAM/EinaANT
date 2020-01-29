@@ -189,12 +189,16 @@ public class Calcula {
 ```
 
 Analitzem el codi per parts.
-    En primer lloc, definim el nom del paquet al que pertany el codi (package com.ieseljust.edd.calc;) i importem la llibreria Calculadora (import com.ieseljust.edd.calc.Calculadora;).
-    Després definim la classe pública Calcula que contindrà dos atributs de tipus float: operand1 i operand2. Com veiem al codi, aquests atributs s'han definit com a estàtics static. Açò significa que són atributs propis de la classe (no prenen valor en cada instància que generem a partir d'ella). A efectes pràctics, açò ens serveis per poder utilitzar el main dins la classe sense necessitat de crear un objecte d'aquesta. Aquests atributs ens serviran per emmagatzemar els operands sobre els què es realitzaran les operacions.
-    Aquesta classe només té un mètode, el main. Dins aquest mètode fem el següent:
-        En primer lloc, i mitjançant el vector d'arguments args que rep el main, comprovem, que li passem dos paràmetres al programa (en la invocació d'aquest des de la línia d'ordres). Amb aquest vector, donem valor als atributs operand1 i operand2.
-        Per tal de poder utilitzar la classe Calculadora, hem de crear un objecte d'aquest tipus. Açò ho farem mitjançant l'operador new, i definint l'objecte com si definirem una variable del tipus de la classe: Calculadora myCalc=new Calculadora();. En aquest cas, hem definit l'objecte myCalc de tipus Calculadora i li hem assignat el resultat de la creació d'un nou (new) objecte Calculadora. Ara, mitjançant MyCalc ja podem accedir a les funcionalitats que aquesta llibreria ens proporciona.
-        Finalment, mostrem els resultats, accedint als valors emmagatzemats d'operand1 i operand2, en aquest cas, sense this, ja que es tracta d'atributs de classe, i invocant als diferents mètodes de la llibreria a través de l'objecte myCalc; per exemple myCalc.suma(operand1, operand2).
+
+En primer lloc, definim el nom del paquet al que pertany el codi (package com.ieseljust.edd.calc;) i importem la llibreria Calculadora (import com.ieseljust.edd.calc.Calculadora;).
+
+Després definim la classe pública Calcula que contindrà dos atributs de tipus float: operand1 i operand2. Com veiem al codi, aquests atributs s'han definit com a estàtics static. Açò significa que són atributs propis de la classe (no prenen valor en cada instància que generem a partir d'ella). A efectes pràctics, açò ens serveis per poder utilitzar el main dins la classe sense necessitat de crear un objecte d'aquesta. Aquests atributs ens serviran per emmagatzemar els operands sobre els què es realitzaran les operacions.
+
+Aquesta classe només té un mètode, el main. Dins aquest mètode fem el següent:
+    
+En primer lloc, i mitjançant el vector d'arguments args que rep el main, comprovem, que li passem dos paràmetres al programa (en la invocació d'aquest des de la línia d'ordres). Amb aquest vector, donem valor als atributs operand1 i operand2.
+Per tal de poder utilitzar la classe Calculadora, hem de crear un objecte d'aquest tipus. Açò ho farem mitjançant l'operador new, i definint l'objecte com si definirem una variable del tipus de la classe: Calculadora myCalc=new Calculadora();. En aquest cas, hem definit l'objecte myCalc de tipus Calculadora i li hem assignat el resultat de la creació d'un nou (new) objecte Calculadora. Ara, mitjançant MyCalc ja podem accedir a les funcionalitats que aquesta llibreria ens proporciona.
+Finalment, mostrem els resultats, accedint als valors emmagatzemats d'operand1 i operand2, en aquest cas, sense this, ja que es tracta d'atributs de classe, i invocant als diferents mètodes de la llibreria a través de l'objecte myCalc; per exemple myCalc.suma(operand1, operand2).
 
 Compilació i execució desde java i javac en terminal
 Per tal de compilar directament el nostre programa, podem fer:
