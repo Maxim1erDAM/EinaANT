@@ -234,14 +234,15 @@ Reemplaçant num1 i num2 pels números que desitgem.
 
 El resultat al probar executarlo és:
 ```
-alumne@alumne-VirtualBox:~/Escritorio/proves/einaant/projecte/classes$ java com.ieseljust.edd.calc.Calcula 3 4
-La suma entre 3.0 i 4.0 és 7.0
-La resta entre 3.0 i 4.0 és -1.0
-La multiplicació entre 3.0 i 4.0 és 12.0
-La divisió entre 3.0 i 4.0 és 0.75
-El número major entre els números pasat com a arguments, que són: 3.0 i 4.0. El major es el número:4.0
-La mitja entre els números pasat com a arguments, que són: 3.0 i 4.0. La mitja es el número:3.5
+alumne@alumne-VirtualBox:~/Escritorio/proves/einaant/projecte$ java com.ieseljust.edd.calc.Calcula 4 3
+La suma entre 4.0 i 3.0 és 7.0
+La resta entre 4.0 i 3.0 és 1.0
+La multiplicació entre 4.0 i 3.0 és 12.0
+La divisió entre 4.0 i 3.0 és 1.3333334
+El número major entre els números pasat com a arguments, que són: 4.0 i 3.0. El major es el número:4.0
+La mitja entre els números pasat com a arguments, que són: 4.0 i 3.0. La mitja es el número:3.5
 Última operació realitzada: Mitja; Últim resultat: 3.5
+
 ```
 
 
