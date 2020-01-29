@@ -2,13 +2,7 @@
 
 ***2019- Editat per Máxim Sánchez Porta***
 
-
 # Index:
-
-
-
-
-
 
 #    **-Activitat pràctica-**
 
