@@ -15,11 +15,9 @@
 #    **-Activitat pràctica-**
 
 # UNITAT 4. Automatització amb Ant.
+# 1. Introducció
 
 >***`
-L'eina Ant (format web)
-1. Introducció
-
 En Java disposem de diverses eines que ens ajuden a automatitzar les tasques de construcció d'aplicacions i gestionar les seues dependències.
 
 En aquesta part de la unitat veurem tres de les principals eines: Apache Ant, Apache Maven i Gradle. Veurem les principals característiques d'elles, i aprendrem com crear i gestionar el cicle de construcció de l'aplicació amb cadascuna.
