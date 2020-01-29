@@ -286,6 +286,8 @@ Una vegada instal·lat, i amb el fitxer build.xml creat, podrem llençar ant amb
 Per tal de compilar el projecte, farem:
     
 ```
+alumne@alumne-VirtualBox:~/Escritorio/einaant/projecte$ ant compile
+
 Buildfile: /home/alumne/Escritorio/einaant/projecte/build.xml
 
 clean:
