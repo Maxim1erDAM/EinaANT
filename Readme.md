@@ -360,25 +360,28 @@ Com veiem, ens ha generat una carpeta classes tal i com hem indicat al target, i
 
     Per a l'execució:
 ```
-$ ant run -Darg0=3 -Darg1=4
-Buildfile: /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/calcula/build.xml
+alumne@alumne-VirtualBox:~/Escritorio/proves/einaant/projecte$ ant run -Darg0=3 -Darg1=4
+Buildfile: /home/alumne/Escritorio/proves/einaant/projecte/build.xml
 
 clean:
-   [delete] Deleting directory /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/calcula/classes
+   [delete] Deleting directory /home/alumne/Escritorio/proves/einaant/projecte/classes
 
 compile:
-    [mkdir] Created dir: /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/calcula/classes
-    [javac] Compiling 2 source files to /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/calcula/classes
+    [mkdir] Created dir: /home/alumne/Escritorio/proves/einaant/projecte/classes
+    [javac] Compiling 2 source files to /home/alumne/Escritorio/proves/einaant/projecte/classes
 
 run:
      [java] La suma entre 3.0 i 4.0 és 7.0
      [java] La resta entre 3.0 i 4.0 és -1.0
      [java] La multiplicació entre 3.0 i 4.0 és 12.0
      [java] La divisió entre 3.0 i 4.0 és 0.75
-     [java] Última operació realitzada: Divideix; Últim resultat: 0.75
+     [java] El número major entre els números pasat com a arguments, que són: 3.0 i 4.0. El major es el número:4.0
+     [java] La mitja entre els números pasat com a arguments, que són: 3.0 i 4.0. La mitja es el número:3.5
+     [java] Última operació realitzada: Mitja; Últim resultat: 3.5
 
 BUILD SUCCESSFUL
-Total time: 1 second
+Total time: 2 seconds
+
 ```
 
 >***`Fixeu-vos que l'ordre ant run afig els dos arguments que necessita la nostra aplicació amb -Darg0=3 -Darg1=4. És a dir, posem -D seguit del nom de l'argument tal i com s'anomena al fitxer build.xml.
