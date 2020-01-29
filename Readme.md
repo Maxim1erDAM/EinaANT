@@ -402,6 +402,9 @@ BUILD SUCCESSFUL
 Total time: 2 seconds
 
 ```
+Asi un altra captura de la meua maquina virtual:
+
+![ImatgeexecucioEinaant](/imatgeseinaant/rundargseinaant.png)
 
 >***`Fixeu-vos que l'ordre ant run afig els dos arguments que necessita la nostra aplicació amb -Darg0=3 -Darg1=4. És a dir, posem -D seguit del nom de l'argument tal i com s'anomena al fitxer build.xml.
 Com veiem, en aquest cas, com que no havíem llençat prèviament el ant clean, la tasca clean, sí que ha esborrat el directori classes. Posteriorment, ha fet la compilació, i finalment, l'execuió.
